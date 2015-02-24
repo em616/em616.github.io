@@ -5,13 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Intimiteti Ne Facebook - em616 blog</title>
+  <title>Juli: MiTM Attack Perl Script - em616 blog</title>
   <meta name="author" content="em616">
 
   
-  <meta name="description" content="Ckemi djema?
-Ne kete postim te rradhes po ju flas pak per intimitetin qe na ofron facebook.
-Pothujase te gjith jemi ne dijene se faqe si facebook &hellip;">
+  <meta name="description" content="Pershendetje ;) Ka kohe qe ky blog nuk eshte ber update, ne fakt jo qe ka qen aktiv me pare por do shofim qe ne ditet ne vazhdim te jemi ketu mbasi &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -20,7 +18,7 @@ Pothujase te gjith jemi ne dijene se faqe si facebook &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://em616.github.io/blog/2014/06/03/Intimiteti-ne-Facebook/">
+  <link rel="canonical" href="http://em616.github.io/blog/2015/02/24/juli-mitm-attack-perl-script/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="em616 blog" type="application/atom+xml">
@@ -70,7 +68,7 @@ Pothujase te gjith jemi ne dijene se faqe si facebook &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Intimiteti Ne Facebook</h1>
+      <h1 class="entry-title">Juli: MiTM Attack Perl Script</h1>
     
     
       <p class="meta">
@@ -79,7 +77,7 @@ Pothujase te gjith jemi ne dijene se faqe si facebook &hellip;">
 
 
 
-<time class='entry-date' datetime='2014-06-03T02:02:29+02:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>3</span><span class='date-suffix'>rd</span>, <span class='date-year'>2014</span></span> <span class='time'>2:02 am</span></time>
+<time class='entry-date' datetime='2015-02-24T01:37:36+01:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:37 am</span></time>
         
            | <a href="#disqus_thread"
              data-disqus-identifier="http://em616.github.io">Comments</a>
@@ -89,31 +87,22 @@ Pothujase te gjith jemi ne dijene se faqe si facebook &hellip;">
   </header>
 
 
-<div class="entry-content"><p>Ckemi djema?
-Ne kete postim te rradhes po ju flas pak per intimitetin qe na ofron facebook.
-Pothujase te gjith jemi ne dijene se faqe si facebook japin per qeverite informacione tonat personale.
-Sot duke analizuar nje program me packet sniffer verejta nje lidhje nga kompjuteri im me facebook mbasi kisha mbyllur facebookun.
-Pak e cuditshme apo jo? Dhe nuk eshte thjesht kontrollimi i cookies, por dhe mbase e heqen komplet nga browseri facebookun.
-Mundet akoma te shikoj se cfar websajtesh po vizitoni, dhe gjera tjera qe akoma nuk i dij per kete.
-Nuk jam i sigurte se cfar eshte por mendoj qe ideja eshte mbledhja e sa me shum te dhenave personale per cdo njerin nga ne dhe ti perdori per arsyet e veta.</p>
+<div class="entry-content"><p>Pershendetje ;)</p>
 
-<p>Well, te dalim fiks ne teme.
-Mbasi mbylla ne browser cdo gje qe ka nje lidhje me facebook, normalisht duhet te besojme qe cdogje eshte e mbyllur, dhe nuk ke me pune mete.
-Kjo qe po ju shfaqi me poshte eshte, mbas mbylljes se facebook nga kompjuteri im.
-E Cila verteton lidhje mes kompjuterit tim dhe 2 serverave te facebook.</p>
+<p>Ka kohe qe ky blog nuk eshte ber update, ne fakt jo qe ka qen aktiv me pare por do shofim qe ne ditet ne vazhdim te jemi ketu mbasi tani kemi dhe kohen e duhur.
+Anyway te vazhdojm me postimin.</p>
 
-<blockquote><p>en@em616:~# lsof -i | grep facebook
-firefox   19180         enn   34u  IPv4 483659      0t0  TCP fLcReW.local:58367-edge-star-ecmp-01-ams2.facebook.com:https (ESTABLISHED)
-firefox   19180         enn   53u  IPv4 480796      0t0  TCP fLcReW.local:39191-channel-ecmp-06-frc1.facebook.com:https (ESTABLISHED)</p></blockquote>
+<p>juli.pl ( Nga na erdhi ky emri ;)  ) eshte nje script i thjeshte per nje metod te quajtur MiTM  (Per sa i perket mitm do shkruaj ndonje dite tjeter dicka per kete) e njohur dhe si network sniffing .</p>
 
-<p>Per fat te keq e njejta gje me ndodhi edhe me browser privat si TOR. Dhe per veten nuk me doket asgje e mire.
-Dhe nuk e kuptoj se cfar menyre eshte ajo qe facebook perdor per te arritur kete. Por te mendoj qe sikur cdo webfaqe qe vizitojme te vazhdoj me te njejtin proces?</p>
+<p><img src="http://i.imgur.com/0ouWZKF.png" title="Juli - MiTM Attack Perl Script" alt="alt text" /></p>
 
-<p>Menyrat per ta bllokuar kete lidhja jane 2.
-E pare e thjeshte. Ristartoni browserin :)
-Ose nese je perdorues linuxi perdorni kete komande.</p>
+<p>Scripti perdoret ne linux dhe duhet te egzekutohet si root user ( su )</p>
 
-<blockquote><p>sudo ngrep -q -d any &lsquo;facebook.com&rsquo; -K 10</p></blockquote>
+<p>Source mund ta merrni ne github :</p>
+
+<p><a href="https://github.com/em616/Juli">https://github.com/em616/Juli</a></p>
+
+<p>Do mireprisja cdo sugjerim apo koment tuajin</p>
 </div>
 
 
@@ -129,7 +118,7 @@ Ose nese je perdorues linuxi perdorni kete komande.</p>
 
 
 
-<time class='entry-date' datetime='2014-06-03T02:02:29+02:00'><span class='date'><span class='date-month'>Jun</span> <span class='date-day'>3</span><span class='date-suffix'>rd</span>, <span class='date-year'>2014</span></span> <span class='time'>2:02 am</span></time>
+<time class='entry-date' datetime='2015-02-24T01:37:36+01:00'><span class='date'><span class='date-month'>Feb</span> <span class='date-day'>24</span><span class='date-suffix'>th</span>, <span class='date-year'>2015</span></span> <span class='time'>1:37 am</span></time>
       
 
 
@@ -137,7 +126,7 @@ Ose nese je perdorues linuxi perdorni kete komande.</p>
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://em616.github.io/blog/2014/06/03/Intimiteti-ne-Facebook/" data-via="EneaMadani" data-counturl="http://em616.github.io/blog/2014/06/03/Intimiteti-ne-Facebook/" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://em616.github.io/blog/2015/02/24/juli-mitm-attack-perl-script/" data-via="EneaMadani" data-counturl="http://em616.github.io/blog/2015/02/24/juli-mitm-attack-perl-script/" >Tweet</a>
   
   
   
@@ -146,8 +135,8 @@ Ose nese je perdorues linuxi perdorni kete komande.</p>
     
     <p class="meta">
       
+        <a class="basic-alignment left" href="/blog/2014/06/03/Intimiteti-ne-Facebook/" title="Previous Post: Intimiteti ne Facebook">&laquo; Intimiteti ne Facebook</a>
       
-        <a class="basic-alignment right" href="/blog/2015/02/24/juli-mitm-attack-perl-script/" title="Next Post: Juli: MiTM Attack perl script">Juli: MiTM Attack perl script &raquo;</a>
       
     </p>
   </footer>
@@ -230,8 +219,8 @@ Ose nese je perdorues linuxi perdorni kete komande.</p>
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://em616.github.io/blog/2014/06/03/Intimiteti-ne-Facebook/';
-        var disqus_url = 'http://em616.github.io/blog/2014/06/03/Intimiteti-ne-Facebook/';
+        var disqus_identifier = 'http://em616.github.io/blog/2015/02/24/juli-mitm-attack-perl-script/';
+        var disqus_url = 'http://em616.github.io/blog/2015/02/24/juli-mitm-attack-perl-script/';
         var disqus_script = 'embed.js';
       
     (function () {
