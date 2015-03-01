@@ -4,7 +4,7 @@
   <title><![CDATA[em616 blog]]></title>
   <link href="http://em616.github.io/atom.xml" rel="self"/>
   <link href="http://em616.github.io/"/>
-  <updated>2015-03-01T13:15:56+01:00</updated>
+  <updated>2015-03-01T13:22:23+01:00</updated>
   <id>http://em616.github.io/</id>
   <author>
     <name><![CDATA[em616]]></name>
@@ -12,68 +12,5 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
-  
-  <entry>
-    <title type="html"><![CDATA[Juli: MiTM Attack perl script]]></title>
-    <link href="http://em616.github.io/2015/02/24/juli-mitm-attack-perl-script/"/>
-    <updated>2015-02-24T01:37:36+01:00</updated>
-    <id>http://em616.github.io/2015/02/24/juli-mitm-attack-perl-script</id>
-    <content type="html"><![CDATA[<p>Pershendetje ;)</p>
-
-<p>Ka kohe qe ky blog nuk eshte ber update, ne fakt jo qe ka qen aktiv me pare por do shofim qe ne ditet ne vazhdim te jemi ketu mbasi tani kemi dhe kohen e duhur.
-Anyway te vazhdojm me postimin.</p>
-
-<p>juli.pl ( Nga na erdhi ky emri ;)  ) eshte nje script i thjeshte per nje metod te quajtur MiTM  (Per sa i perket mitm do shkruaj ndonje dite tjeter dicka per kete) e njohur dhe si network sniffing .</p>
-
-<p><img src="http://i.imgur.com/0ouWZKF.png" title="Juli - MiTM Attack Perl Script" alt="alt text" /></p>
-
-<!-- more -->
-
-
-<p>Scripti perdoret ne linux dhe duhet te egzekutohet si root user ( su )</p>
-
-<p>Source mund ta merrni ne github :</p>
-
-<p><a href="https://github.com/em616/Juli">https://github.com/em616/Juli</a></p>
-
-<p>Do mireprisja cdo sugjerim apo koment tuajin</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Intimiteti ne Facebook]]></title>
-    <link href="http://em616.github.io/2014/06/03/Intimiteti-ne-Facebook/"/>
-    <updated>2014-06-03T02:02:29+02:00</updated>
-    <id>http://em616.github.io/2014/06/03/Intimiteti-ne-Facebook</id>
-    <content type="html"><![CDATA[<p>Ckemi djema?
-Ne kete postim te rradhes po ju flas pak per intimitetin qe na ofron facebook.
-Pothujase te gjith jemi ne dijene se faqe si facebook japin per qeverite informacione tonat personale.
-Sot duke analizuar nje program me packet sniffer verejta nje lidhje nga kompjuteri im me facebook mbasi kisha mbyllur facebookun.
-Pak e cuditshme apo jo? Dhe nuk eshte thjesht kontrollimi i cookies, por dhe mbase e heqen komplet nga browseri facebookun.
-Mundet akoma te shikoj se cfar websajtesh po vizitoni, dhe gjera tjera qe akoma nuk i dij per kete.
-Nuk jam i sigurte se cfar eshte por mendoj qe ideja eshte mbledhja e sa me shum te dhenave personale per cdo njerin nga ne dhe ti perdori per arsyet e veta.</p>
-
-<!-- more -->
-
-
-<p>Well, te dalim fiks ne teme.
-Mbasi mbylla ne browser cdo gje qe ka nje lidhje me facebook, normalisht duhet te besojme qe cdogje eshte e mbyllur, dhe nuk ke me pune mete.
-Kjo qe po ju shfaqi me poshte eshte, mbas mbylljes se facebook nga kompjuteri im.
-E Cila verteton lidhje mes kompjuterit tim dhe 2 serverave te facebook.</p>
-
-<blockquote><p>en@em616:~# lsof -i | grep facebook
-firefox   19180         enn   34u  IPv4 483659      0t0  TCP fLcReW.local:58367-edge-star-ecmp-01-ams2.facebook.com:https (ESTABLISHED)
-firefox   19180         enn   53u  IPv4 480796      0t0  TCP fLcReW.local:39191-channel-ecmp-06-frc1.facebook.com:https (ESTABLISHED)</p></blockquote>
-
-<p>Per fat te keq e njejta gje me ndodhi edhe me browser privat si TOR. Dhe per veten nuk me doket asgje e mire.
-Dhe nuk e kuptoj se cfar menyre eshte ajo qe facebook perdor per te arritur kete. Por te mendoj qe sikur cdo webfaqe qe vizitojme te vazhdoj me te njejtin proces?</p>
-
-<p>Menyrat per ta bllokuar kete lidhja jane 2.
-E pare e thjeshte. Ristartoni browserin :)
-Ose nese je perdorues linuxi perdorni kete komande.</p>
-
-<blockquote><p>sudo ngrep -q -d any &lsquo;facebook.com&rsquo; -K 10</p></blockquote>
-]]></content>
-  </entry>
   
 </feed>
